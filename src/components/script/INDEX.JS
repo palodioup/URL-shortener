@@ -9,5 +9,5 @@ btnUrl.addEventListener("click", () => {
   fetch(apiUrl)
     .then((response) => response.text())
     .then((data) => (dt.innerHTML = `<p>${data}</p>`))
-    .catch((error) => alert("Error: Unable to shorten URL"));
+    .catch((error) => alert(error));
 });
